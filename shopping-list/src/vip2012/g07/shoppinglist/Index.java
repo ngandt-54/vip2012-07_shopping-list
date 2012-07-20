@@ -8,6 +8,10 @@ public class Index extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        
+//        setContentView(R.layout.main);
+        setContentView(R.layout.layout_add_new_products);
+        
+        
     }
 }
