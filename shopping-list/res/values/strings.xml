@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, Index!</string>
-    <string name="app_name">Shopping-list</string>
+    <string name="app_name">ShoppingList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="string_btn_create">Create</string>
+    <string name="string_btn_cancel">Cancel</string>
+    <string name="string_label_title">Title</string>
+    <string name="string_label_priority">Priority</string>
+    <string name="string_label_quantity">Quantity</string>
+    <string name="string_label_price">Price</string>
+    <string name="string_label_unit">Unit</string>
+    <string name="string_btn_more_option">More options</string>
+    <string name="string_label_place">Place</string>
 
 </resources>
