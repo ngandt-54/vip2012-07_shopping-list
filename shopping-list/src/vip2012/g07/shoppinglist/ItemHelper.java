@@ -19,18 +19,20 @@ public class ItemHelper extends SQLiteOpenHelper {
 	public static final String UNIT = "UNIT";
 	public static final String PLACE = "PLACE";
 	public static final String TIME = "TIME";
+	public static final String DATE = "DATE";
 
-	private static final String ITEM_TABLE_CREATE = "CREATE TABLE"
-			+ ITEM_TABLE_NAME + "(" + ID + ""
-			+ "integer primary key autoincrement, "
-			+ NAME + "TEXT,"
-			+ PRIORITY + "integer,"
-			+ PRICE + "float,"
-			+ STATUS + "integer, "
-			+ QUANTITY + "float,"
-			+ UNIT + "TEXT, "
-			+ PLACE + "TEXT,"
-			+ TIME + "date);";
+	private static final String ITEM_TABLE_CREATE = "CREATE TABLE "
+			+ ITEM_TABLE_NAME + "(" + ID
+			+ " integer primary key autoincrement, "
+			+ NAME + " TEXT, "
+			+ PLACE + " TEXT,"
+			+ PRICE + " float,"
+			+ PRIORITY + " integer,"
+			+ QUANTITY + " float,"
+			+ STATUS + " integer, "
+			+ TIME + " TEXT," 
+			+ DATE + " TEXT,"
+			+ UNIT + " TEXT);";
 	
 	ItemHelper(Context context){
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -38,6 +40,7 @@ public class ItemHelper extends SQLiteOpenHelper {
 	
 	@Override
 	public void onCreate(SQLiteDatabase db){
+		db.execSQL("drop table if exists " + ITEM_TABLE_NAME);
 		db.execSQL(ITEM_TABLE_CREATE);
 	}
 	

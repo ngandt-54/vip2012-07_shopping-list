@@ -1,17 +1,35 @@
 <resources>
 
     <string name="app_name">ShoppingList</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="string_btn_create">Create</string>
     <string name="string_btn_cancel">Cancel</string>
-    <string name="string_label_title">Title</string>
+    <string name="string_btn_time">Time</string>
+    <string name="label_item_title">Title:</string>
+    <string name="label_item_priority">Priority:</string>
+    <string name="label_item_quantity">Quantity:</string>
+    <string name="label_item_price">Price:</string>
+    <string name="label_item_place">Place:</string>
+    <string name="label_item_time">Time:</string>
+    <string name="label_item_date">Date:</string>
+    <string name="string_label_title">Title:</string>
+    
+    <string name="additem_err_dialog">Please enter the item name!</string>
+    
     <string name="string_label_priority">Priority</string>
     <string name="string_label_quantity">Quantity</string>
     <string name="string_label_price">Price</string>
     <string name="string_label_unit">Unit</string>
+    <string name="string_label_status">Status</string>
+    <string name="string_label_time">Time</string>
     <string name="string_btn_more_option">More options</string>
     <string name="string_label_place">Place</string>
+    <string name="title_add_new_item">Add New Item</string>
+    
+    <string-array name="unit_array"> 
+        <item>kg</item>
+        <item>pack</item>
+    </string-array>
 
 </resources>

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class Index extends Activity implements OnClickListener {
+public class Main extends Activity implements OnClickListener {
 	
 	Button add;
 	
@@ -17,7 +17,6 @@ public class Index extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         
         setContentView(R.layout.main);
-//        setContentView(R.layout.layout_add_new_products);
         
         add = (Button) findViewById(R.id.add_btn);
         add.setOnClickListener(this);
@@ -26,7 +25,7 @@ public class Index extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
-		Intent itAddNewProduct = new Intent(arg0.getContext(), AddNewProduct.class);
+		Intent itAddNewProduct = new Intent(arg0.getContext(), AddNewItem.class);
 		startActivityForResult(itAddNewProduct, 0);
 	}
 }

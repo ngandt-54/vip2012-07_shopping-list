@@ -1,0 +1,430 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/add_new_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#dddddd"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@xml/my_btn_ics"
+            android:gravity="center"
+            android:text="@string/string_btn_create"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@xml/my_btn_ics"
+            android:gravity="center"
+            android:text="@string/string_btn_cancel"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f8a750" />
+
+    <!--
+         <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/add_new_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_new_title"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:gravity="bottom"
+                android:text="@string/string_label_title"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_new_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_textfield_ics"
+                android:padding="4dp"
+                android:textSize="16dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#878787" />
+
+        <LinearLayout
+            android:id="@+id/layout_new_priority"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_priority"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:gravity="bottom"
+                android:text="@string/string_label_priority"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radiobutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/radiobutton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:checked="false"/>
+                 <RadioButton
+                    android:id="@+id/radiobutton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:checked="false"/>
+                  <RadioButton
+                    android:id="@+id/radiobutton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:checked="false"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#878787" />
+
+        <LinearLayout
+            android:id="@+id/layout_new_quantity"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_quantity"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_new_quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_textfield_ics"
+                android:inputType="number"
+                android:padding="4dp"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edit_new_money"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_textfield_ics"
+                android:padding="4dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#878787" />
+
+        <LinearLayout
+            android:id="@+id/layout_new_price"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_price"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_new_price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_textfield_ics"
+                android:inputType="number"
+                android:padding="4dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/label_new_unit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_unit"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/edit_new_unit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@xml/my_spinner_ics"
+                android:padding="4dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_new_status"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_status"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_status"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:layout_margin="4dp"
+                android:layout_weight="1">
+            </CheckBox>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#878787" />
+
+        <LinearLayout
+            android:id="@+id/layout_more_option"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/label_new_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/string_label_place"
+                    android:textColor="#f8a750"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_new_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@xml/my_textfield_ics"
+                    android:padding="4dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#878787" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/label_new_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Due date"
+                    android:textColor="#f8a750"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/edit_new_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    android:text="Set Date"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_new_place"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_place"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_place"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_new_place"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_textfield_ics"
+                android:inputType="number"
+                android:padding="4dp"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/edit_new_place"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@xml/my_spinner_ics"
+                android:padding="4dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_new_time"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_new_time"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/string_label_time"
+                android:textColor="#f8a750"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@xml/my_btn_ics"
+                android:gravity="center"
+                android:text="@string/string_btn_time"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

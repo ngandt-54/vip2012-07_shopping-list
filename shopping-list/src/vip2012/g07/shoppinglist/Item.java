@@ -3,8 +3,6 @@
  */
 package vip2012.g07.shoppinglist;
 
-import java.util.Date;
-
 /**
  * @author codai2810
  *
@@ -18,41 +16,36 @@ public class Item {
 	private String unit;
 	private int status;
 	private String place;
-	private Date time;
+	private String time;
+	private String date;
 	
-	Item() {
-		name = "";
-		priority = 0;
-		quantity = 0;
-		price = 0;
-		unit = "";
-		status = 0;
-		place = "";
-		time = null;
+	public Item() {}
+	
+	public Item(String name, int priority, float quantity, float price,
+			String unit, String place, String time, String date) {
+		this.name = name;
+		this.priority = priority;
+		this.quantity = quantity;
+		this.price = price;
+		this.unit = unit;
+		this.place = place;
+		this.time = time;
+		this.date = date;
+		this.status = 0;
 	}
-	
-	Item(String iname) {
-		name = iname;
-		priority = 0;
-		quantity = 0;
-		price = 0;
-		unit = "";
-		status = 0;
-		place = "";
-		time = null;
+
+	public Item(String name, int priority, float quantity, float price,
+			String unit, String place, String time, String date, int status) {
+		this.name = name;
+		this.priority = priority;
+		this.quantity = quantity;
+		this.price = price;
+		this.unit = unit;
+		this.status = status;
+		this.place = place;
+		this.time = time;
+		this.date = date;
 	}
-	
-	Item(String iname, int ipriority) {
-		name = iname;
-		priority = ipriority;
-		quantity = 0;
-		price = 0;
-		unit = "";
-		status = 0;
-		place = "";
-		time = null;
-	}
-	
 	public int getId() {
 		return id;
 	}
@@ -113,16 +106,28 @@ public class Item {
 		return place;
 	}
 	
-	public void setTime(Date itime) {
+	public void setTime(String itime) {
 		time = itime;
 	}
 	
-	public Date getTime() {
+	public String getTime() {
 		return time;
+	}
+	
+	public void setDate(String idate) {
+		date = idate;
+	}
+	
+	public String getDate() {
+		return date;
 	}
 	
 	//TODO
 	public String toString() {
 		return null;
+	}
+
+	public void setId(int int1) {
+		id = int1;
 	}
 }

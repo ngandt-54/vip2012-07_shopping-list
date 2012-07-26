@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_add_new_item"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+	
+	<TextView 
+	    android:id="@+id/tvitem_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/title"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_title"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+	
+	<TextView 
+	    android:id="@+id/tvitem_priority"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_title"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_priority"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+	
+	<TextView 
+	    android:id="@+id/tvitem_quantity"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_priority"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_quantity"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+	
+	<TextView 
+	    android:id="@+id/tvitem_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_quantity"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_price"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+		
+	<TextView 
+	    android:id="@+id/tvitem_place"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_price"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_place"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+	
+	<TextView 
+	    android:id="@+id/tvitem_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_place"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_time"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+
+	<TextView 
+	    android:id="@+id/tvitem_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvitem_time"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:text="@string/label_item_date"
+	    android:textColor="@color/white"
+	    android:textSize="20dp"
+	    android:textStyle="bold" />
+	
+	<EditText
+	    android:id="@+id/etitem_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_title"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:text="" />
+
+	<RadioGroup
+	    android:id="@+id/rgitem_priority"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/etitem_title"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+        android:layout_marginTop="55dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <RadioButton
+	        android:id="@+id/radio0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <RadioButton
+	        android:id="@+id/radio1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <RadioButton
+	        android:id="@+id/radio2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <RadioButton
+	        android:id="@+id/radio3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+
+	    <RadioButton
+	        android:id="@+id/radio4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.14"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+	</RadioGroup>
+
+	<Spinner
+	    android:id="@+id/spitem_unit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_quantity"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp" />
+	
+	<EditText
+	    android:id="@+id/etitem_quantity"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_quantity"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toLeftOf="@+id/spitem_unit"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:text="0"
+	    android:inputType="numberDecimal" />
+	
+	<EditText
+	    android:id="@+id/etitem_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_price"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:text="0"
+	    android:inputType="numberDecimal" />
+	
+	<EditText
+	    android:id="@+id/etitem_place"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_place"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:text="" />
+	
+	<EditText
+	    android:id="@+id/etitem_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_time"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="100dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:editable="false"
+	    android:text="" />
+	
+	<EditText
+	    android:id="@+id/etitem_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvitem_date"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="70dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/tvitem_quantity"
+	    android:editable="false"
+	    android:text="" />
+
+	<Button
+	    android:id="@+id/btitem_add"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="39dp"
+	    android:layout_toLeftOf="@+id/etitem_time"
+	    android:text="Add" />
+
+	<Button
+	    android:id="@+id/btitem_cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/btitem_add"
+	    android:layout_alignRight="@+id/etitem_quantity"
+	    android:text="Cancel" />
+
+</RelativeLayout>
