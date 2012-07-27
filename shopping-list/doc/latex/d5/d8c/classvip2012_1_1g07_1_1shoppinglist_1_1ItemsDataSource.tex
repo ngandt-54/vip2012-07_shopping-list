@@ -1,0 +1,183 @@
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource}{\section{vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source Class Reference}
+\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource}\index{vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source@{vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source}}
+}
+
+
+Shopping-\/list Data A\-P\-I.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a7f587b5659f28abccaa29599d1929b0e}{Items\-Data\-Source} (Context context)
+\begin{DoxyCompactList}\small\item\em Constructor used each time a new item database object is created. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a112f0fe334be82e8ea9c007bbda43a9b}{open} ()  throws S\-Q\-L\-Exception 
+\begin{DoxyCompactList}\small\item\em Opens the database that will be used for reading and writing. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ce40231e9a340d63593060a7669054d}{close} ()
+\begin{DoxyCompactList}\small\item\em Close any opened database object. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a46a373cfb826d1276d1466b4179ad87e}{empty\-Table} ()
+\begin{DoxyCompactList}\small\item\em Convenience method for deleting all records in the database. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a6e314e4ad98c8084515bd1f8835100d6}{add\-Item} (\hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} item)
+\begin{DoxyCompactList}\small\item\em Method for inserting an item into the database. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a89e56353e7301c70c6a3fa7ae8c98776}{update\-Item} (\hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} item)
+\begin{DoxyCompactList}\small\item\em Method for updating an item's information in the database. \end{DoxyCompactList}\item 
+void \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a5db93191fa502994fe32c410cdfedbda}{delete\-Item} (int item\-Id)
+\begin{DoxyCompactList}\small\item\em Convenience method for deleting a row in the database. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} $>$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a170631594944dfbe690b8354d04bac9f}{get\-All\-Items} ()
+\begin{DoxyCompactList}\small\item\em Query the table, fetch all items in the table. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} $>$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_af2df438195f3a727e4e09c82071a9bb4}{get\-All\-Items} (String selection)
+\begin{DoxyCompactList}\small\item\em Query the table, fetch all items in the table that have an attribute match the condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Shopping-\/list Data A\-P\-I. 
+
+\begin{DoxyAuthor}{Author}
+codai2810 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a7f587b5659f28abccaa29599d1929b0e}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!Items\-Data\-Source@{Items\-Data\-Source}}
+\index{Items\-Data\-Source@{Items\-Data\-Source}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{Items\-Data\-Source}]{\setlength{\rightskip}{0pt plus 5cm}vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-Items\-Data\-Source (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a7f587b5659f28abccaa29599d1929b0e}
+
+
+Constructor used each time a new item database object is created. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context in which the item database is created. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a6e314e4ad98c8084515bd1f8835100d6}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!add\-Item@{add\-Item}}
+\index{add\-Item@{add\-Item}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{add\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-add\-Item (
+\begin{DoxyParamCaption}
+\item[{{\bf Item}}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a6e314e4ad98c8084515bd1f8835100d6}
+
+
+Method for inserting an item into the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the instance that need to be inserted into the database \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ce40231e9a340d63593060a7669054d}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!close@{close}}
+\index{close@{close}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ce40231e9a340d63593060a7669054d}
+
+
+Close any opened database object. 
+
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a5db93191fa502994fe32c410cdfedbda}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!delete\-Item@{delete\-Item}}
+\index{delete\-Item@{delete\-Item}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{delete\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-delete\-Item (
+\begin{DoxyParamCaption}
+\item[{int}]{item\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a5db93191fa502994fe32c410cdfedbda}
+
+
+Convenience method for deleting a row in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\-Id} & I\-D of the item need to be deleted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a46a373cfb826d1276d1466b4179ad87e}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!empty\-Table@{empty\-Table}}
+\index{empty\-Table@{empty\-Table}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{empty\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-empty\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a46a373cfb826d1276d1466b4179ad87e}
+
+
+Convenience method for deleting all records in the database. 
+
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a170631594944dfbe690b8354d04bac9f}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!get\-All\-Items@{get\-All\-Items}}
+\index{get\-All\-Items@{get\-All\-Items}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{get\-All\-Items}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Item}$>$ vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-get\-All\-Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a170631594944dfbe690b8354d04bac9f}
+
+
+Query the table, fetch all items in the table. 
+
+\begin{DoxyReturn}{Returns}
+list of items fetched 
+\end{DoxyReturn}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_af2df438195f3a727e4e09c82071a9bb4}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!get\-All\-Items@{get\-All\-Items}}
+\index{get\-All\-Items@{get\-All\-Items}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{get\-All\-Items}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Item}$>$ vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-get\-All\-Items (
+\begin{DoxyParamCaption}
+\item[{String}]{selection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_af2df438195f3a727e4e09c82071a9bb4}
+
+
+Query the table, fetch all items in the table that have an attribute match the condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selection} & the condition, could be time or place (both are string but different format) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of items fetched 
+\end{DoxyReturn}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a112f0fe334be82e8ea9c007bbda43a9b}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!open@{open}}
+\index{open@{open}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws S\-Q\-L\-Exception \hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a112f0fe334be82e8ea9c007bbda43a9b}
+
+
+Opens the database that will be used for reading and writing. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\-Q\-L\-Exception} & if the database cannot be opened for writing \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a89e56353e7301c70c6a3fa7ae8c98776}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!update\-Item@{update\-Item}}
+\index{update\-Item@{update\-Item}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
+\subsubsection[{update\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-update\-Item (
+\begin{DoxyParamCaption}
+\item[{{\bf Item}}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{d5/d8c/classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a89e56353e7301c70c6a3fa7ae8c98776}
+
+
+Method for updating an item's information in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the instance that need to be updated \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/vip2012/g07/shoppinglist/\hyperlink{ItemsDataSource_8java}{Items\-Data\-Source.\-java}\end{DoxyCompactItemize}
