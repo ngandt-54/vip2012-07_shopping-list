@@ -27,20 +27,6 @@ List$<$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} $>$ \hyper
 \begin{DoxyCompactList}\small\item\em Query the table, fetch all items in the table. \end{DoxyCompactList}\item 
 List$<$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} $>$ \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_af2df438195f3a727e4e09c82071a9bb4}{get\-All\-Items} (String selection)
 \begin{DoxyCompactList}\small\item\em Query the table, fetch all items in the table that have an attribute match the condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1Item}{Item} \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a98483a85252ce38503df3d30003e02c0}{cursor\-To\-Item} (Cursor cursor)
-\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-S\-Q\-Lite\-Database \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a36fcfdcb49b8aa65c09e76e4ffbe082f}{database}
-\item 
-\hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemHelper}{Item\-Helper} \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ae51344b41caf6d6ecb0130ef6befee}{db\-Helper}
-\item 
-String\mbox{[}$\,$\mbox{]} \hyperlink{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a0695a611639f051273a04737321f7edc}{all\-Columns}
-\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -98,13 +84,6 @@ Method for inserting an item into the database.
 
 Close any opened database object. 
 
-\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a98483a85252ce38503df3d30003e02c0}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!cursor\-To\-Item@{cursor\-To\-Item}}
-\index{cursor\-To\-Item@{cursor\-To\-Item}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
-\subsubsection[{cursor\-To\-Item}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item} vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-cursor\-To\-Item (
-\begin{DoxyParamCaption}
-\item[{Cursor}]{cursor}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a98483a85252ce38503df3d30003e02c0}
 \hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a5db93191fa502994fe32c410cdfedbda}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!delete\-Item@{delete\-Item}}
 \index{delete\-Item@{delete\-Item}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
 \subsubsection[{delete\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-delete\-Item (
@@ -197,25 +176,6 @@ Method for updating an item's information in the database.
 {\em item} & the instance that need to be updated \\
 \hline
 \end{DoxyParams}
-
-
-\subsection{Member Data Documentation}
-\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a0695a611639f051273a04737321f7edc}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!all\-Columns@{all\-Columns}}
-\index{all\-Columns@{all\-Columns}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
-\subsubsection[{all\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-all\-Columns\hspace{0.3cm}{\ttfamily [private]}}}\label{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a0695a611639f051273a04737321f7edc}
-{\bfseries Initial value\-:}
-\begin{DoxyCode}
- \{ ItemHelper.ID,ItemHelper.NAME,
-            ItemHelper.PLACE, ItemHelper.PRICE, ItemHelper.PRIORITY, 
-            ItemHelper.QUANTITY,ItemHelper.STATUS,ItemHelper.TIME, 
-            ItemHelper.DATE, ItemHelper.UNIT \}
-\end{DoxyCode}
-\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a36fcfdcb49b8aa65c09e76e4ffbe082f}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!database@{database}}
-\index{database@{database}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
-\subsubsection[{database}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-Lite\-Database vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-database\hspace{0.3cm}{\ttfamily [private]}}}\label{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a36fcfdcb49b8aa65c09e76e4ffbe082f}
-\hypertarget{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ae51344b41caf6d6ecb0130ef6befee}{\index{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}!db\-Helper@{db\-Helper}}
-\index{db\-Helper@{db\-Helper}!vip2012::g07::shoppinglist::ItemsDataSource@{vip2012\-::g07\-::shoppinglist\-::\-Items\-Data\-Source}}
-\subsubsection[{db\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item\-Helper} vip2012.\-g07.\-shoppinglist.\-Items\-Data\-Source.\-db\-Helper\hspace{0.3cm}{\ttfamily [private]}}}\label{classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource_a1ae51344b41caf6d6ecb0130ef6befee}
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

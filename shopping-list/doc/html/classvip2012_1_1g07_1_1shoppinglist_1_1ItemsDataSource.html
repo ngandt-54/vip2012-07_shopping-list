@@ -87,8 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vip2012.g07.shoppinglist.ItemsDataSource Class Reference</div>  </div>
@@ -118,16 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a170631594944dfbe690b8354d04bac9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the table, fetch all items in the table.  <a href="#a170631594944dfbe690b8354d04bac9f"></a><br/></td></tr>
 <tr class="memitem:af2df438195f3a727e4e09c82071a9bb4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1Item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource.html#af2df438195f3a727e4e09c82071a9bb4">getAllItems</a> (String selection)</td></tr>
 <tr class="memdesc:af2df438195f3a727e4e09c82071a9bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the table, fetch all items in the table that have an attribute match the condition.  <a href="#af2df438195f3a727e4e09c82071a9bb4"></a><br/></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a98483a85252ce38503df3d30003e02c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1Item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource.html#a98483a85252ce38503df3d30003e02c0">cursorToItem</a> (Cursor cursor)</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a36fcfdcb49b8aa65c09e76e4ffbe082f"><td class="memItemLeft" align="right" valign="top">SQLiteDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource.html#a36fcfdcb49b8aa65c09e76e4ffbe082f">database</a></td></tr>
-<tr class="memitem:a1ae51344b41caf6d6ecb0130ef6befee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemHelper.html">ItemHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource.html#a1ae51344b41caf6d6ecb0130ef6befee">dbHelper</a></td></tr>
-<tr class="memitem:a0695a611639f051273a04737321f7edc"><td class="memItemLeft" align="right" valign="top">String[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemsDataSource.html#a0695a611639f051273a04737321f7edc">allColumns</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Shopping-list Data API. </p>
@@ -220,30 +208,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close any opened database object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a98483a85252ce38503df3d30003e02c0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1Item.html">Item</a> vip2012.g07.shoppinglist.ItemsDataSource.cursorToItem </td>
-          <td>(</td>
-          <td class="paramtype">Cursor&#160;</td>
-          <td class="paramname"><em>cursor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -426,78 +390,13 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2>Member Data Documentation</h2>
-<a class="anchor" id="a0695a611639f051273a04737321f7edc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String [] vip2012.g07.shoppinglist.ItemsDataSource.allColumns</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"> { ItemHelper.ID,ItemHelper.NAME,</div>
-<div class="line">            ItemHelper.PLACE, ItemHelper.PRICE, ItemHelper.PRIORITY, </div>
-<div class="line">            ItemHelper.QUANTITY,ItemHelper.STATUS,ItemHelper.TIME, </div>
-<div class="line">            ItemHelper.DATE, ItemHelper.UNIT }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a36fcfdcb49b8aa65c09e76e4ffbe082f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SQLiteDatabase vip2012.g07.shoppinglist.ItemsDataSource.database</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1ae51344b41caf6d6ecb0130ef6befee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvip2012_1_1g07_1_1shoppinglist_1_1ItemHelper.html">ItemHelper</a> vip2012.g07.shoppinglist.ItemsDataSource.dbHelper</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/vip2012/g07/shoppinglist/<a class="el" href="ItemsDataSource_8java.html">ItemsDataSource.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 27 2012 08:25:54 for shopping-list by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 27 2012 08:32:30 for shopping-list by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
